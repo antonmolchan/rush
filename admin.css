@@ -1,0 +1,116 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.input-container {
+    display: -ms-flexbox; 
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid dodgerblue;
+}
+
+.btn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+body {font-family: "Lato", sans-serif;}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.tablink {
+    background-color: #777;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 33.3333333333%;
+}
+
+.contAdmn {
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px;
+    text-align: center;
+}
+
+#Products {background-color:blue;}
+#Categories {background-color:purple;}
+#Users {background-color:green;}
+
+#cat {
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+  display: block;
+}
+#usrs {
+   width: 100%;
+  height: 100%;
+  background-color: #333;
+  display: none;
+}
+#prdc {
+   width: 100%;
+  min-height: : 800px;
+  background-color: red;
+  display: none;
+}
+
+.imgCont {
+  width: 40px;
+  height: 40px;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgCont img {
+  width: 25px;
+  height: 25px;
+}

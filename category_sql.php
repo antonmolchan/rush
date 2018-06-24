@@ -53,7 +53,7 @@ function updateCategory ($id, $name) {
 global $servername, $username, $password, $dbname;
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) die("Connection failed: " . mysqli_connect_error());
-
+	
 $sql = "UPDATE category SET name='$name' WHERE id='$id'";
 $res = false;
 if (mysqli_query($conn, $sql)) {

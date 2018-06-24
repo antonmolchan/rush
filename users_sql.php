@@ -12,7 +12,6 @@ $result = mysqli_query($conn, $sql);
 $arary;
 if (mysqli_num_rows($result) > 0) {
     while($data = mysqli_fetch_assoc($result)) {
-        // echo "id: " . $data["id"]. " -  Name: " . $data["name"]. "<br>";
         $arary[] = $data;
     }
 }
@@ -69,13 +68,13 @@ mysqli_close($conn);
 return ($ifExist);
 }
 
-function deleteUser ($login) {
+function deleteUser ($id) {
 global $servername, $username, $password, $dbname;
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) die("Connection failed: " . mysqli_connect_error());
 $res = false;
 
-$sql = "DELETE FROM user WHERE login='$login'";
+$sql = "DELETE FROM user WHERE id='$id'";
 
 if (mysqli_query($conn, $sql)) {
     $res = true;
@@ -84,7 +83,7 @@ mysqli_close($conn);
 return ($res);
 }
 
-function updateUserData ($login, $pass, $id) {
+function updateUserData ($id, $login, $pass) {
 global $servername, $username, $password, $dbname;
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) die("Connection failed: " . mysqli_connect_error());
